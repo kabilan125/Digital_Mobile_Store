@@ -1,0 +1,156 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#cart-button{
+    border-radius: 15px;
+    border: 2px solid #ddd;
+}
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Product list styles */
+.product-list {
+    /* display: grid; */
+    grid-template-columns: repeat(4, 1fr); 
+     gap: 2rem; 
+    margin: 2rem; 
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* .product img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+} */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Add this to your styles */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 500px; /* Max height for the cart modal */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+/* Modal for Cart */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content styles */
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.close, .close-product {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column p {
+    margin: 0.5rem 0;
+}
+
+.footer-column a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Product modal styles */
+#product-modal img {
+    max-width: 400px;
+    height: auto;
+}
+
+#product-modal h2, #product-modal p {
+    margin-top: 1rem;
+}
+
+/* Add this for modal positioning */
+#product-modal {
+    display: none;
+}
